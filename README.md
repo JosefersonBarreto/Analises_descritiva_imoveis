@@ -1,5 +1,5 @@
 
- ## pacote em R para análises descritivas de dados imobiliários
+ ## Pacote em R para Análises Descritivas de Dados Imobiliários
 
 esse é um repistório de um pacote em R  contendo  funções  para analises descritiva em R  voltados a  dados de imoveis , no futuro a  biblioteca poderá conter mais funções ,  
 está biblioteca é composta de duas funções ** analise_variaveis_dataframe2**  e  **analise_interacao_categorica_numerica**  , onde ,** analise_variaveis_dataframe2**  retorna
