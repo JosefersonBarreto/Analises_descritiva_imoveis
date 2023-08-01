@@ -1,5 +1,5 @@
-# Analises_descritiva_imoveis
- pacote em R para análises descritivas de dados imobiliários
+
+ ## pacote em R para análises descritivas de dados imobiliários
 
 esse é um repistório de um pacote em R  contendo  funções  para analises descritiva em R  voltados a  dados de imoveis , no futuro a  biblioteca poderá conter mais funções ,  
 está biblioteca é composta de duas funções ** analise_variaveis_dataframe2**  e  **analise_interacao_categorica_numerica**  , onde ,** analise_variaveis_dataframe2**  retorna
@@ -18,38 +18,47 @@ de uso seria analisar como o preço dos imóveis varia entre diferentes bairros.
 numéricas correspondentes
 
 
-# Instalação  
+## Instalação  
 
 em caso de duvidas, clone o repositório e execute o seguinte comando no R:
 
-# verefique se  AnalisesTEST_0.1.0.tar.gz  está no diretório e executeo o código 
+### verefique se  AnalisesTEST_0.1.0.tar.gz  está no diretório e executeo o código 
 caminho_pacote <- "AnalisesTEST_0.1.0.tar.gz"
 
-# Instalar o pacote a partir do arquivo local
+### Instalar o pacote a partir do arquivo local
 install.packages(caminho_pacote, repos = NULL, type = "source")
 
-#apos a intalação ,carregue a biblioteca 
+### apos a intalação ,carregue a biblioteca 
 
 library(AnalisesTEST)
 
 
 
 
-# carregue a banco de dados de exemplos 
+### carregue a banco de dados de exemplos 
 
 carregue o banco de dados disponível no repositório da biblioteca 
 dados<-read.csv("imoveis.csv")
 
 
-# para fazer  uma analise descritiva de todas as variaveis presentes no conjunto de dados 
-# use a  função abaixo 
+ para fazer  uma analise descritiva de todas as variaveis presentes no conjunto de dados  use a  função abaixo 
 
 analise_variaveis_dataframe2(dados = dados)
 
 
 
 
-# a seguinte função  fara a análise descritiva com base na interação entre uma variável  categórica e uma varíavel numerica
+### a seguinte função  fara a análise descritiva com base na interação entre uma variável  categórica e uma varíavel numerica
 
 
 analise_interacao_categorica_numerica(variavel_categorica = "bairro", variavel_numerica = "aluguel", dados = dados)
+
+
+
+## Informações Adicionais
+Essa é apenas uma versão inicial,no futuro, o pacote irá receber outras funções adicionais.
+
+pacote criado e desencolvido por: Joseferson  Barreto
+email: Joseferson7@gmail.com
+
+
