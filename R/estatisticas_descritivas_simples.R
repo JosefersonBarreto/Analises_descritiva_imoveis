@@ -93,7 +93,7 @@ analise_interacao_categorica_numerica <- function(variavel_categorica, variavel_
   colnames(resultados) <- nomes_colunas
   resultados <- resultados[order(resultados$preco_medio_aluguel, decreasing = TRUE), ]
 
-  mensagem <- paste("O aluguel é mais caro no", resultados[1, variavel_categorica], ", cerca de", round(resultados[1, "preco_medio_aluguel"], 2), "e mais barato no", resultados[nrow(resultados), variavel_categorica], ", cerca de", round(resultados[nrow(resultados), "preco_medio_aluguel"], 2))
+  mensagem <- paste("O aluguel é mais caro em média no", resultados[1, variavel_categorica], ", cerca de", round(resultados[1, "preco_medio_aluguel"], 2), "e mais barato em média no", resultados[nrow(resultados), variavel_categorica], ", cerca de", round(resultados[nrow(resultados), "preco_medio_aluguel"], 2))
 
   return(list(resultado_interacao = resultados, mensagem = mensagem))
 }
